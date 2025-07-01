@@ -60,7 +60,7 @@ namespace LibraryWebApi.Controllers
             try
             {
                 var createdBook = await _bookService.CreateBook(dto);
-                return Ok(createdBook);
+                return Ok   (createdBook);
             }
             catch (ApplicationException ex)
             {
